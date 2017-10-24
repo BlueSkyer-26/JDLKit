@@ -20,6 +20,7 @@
     [super viewDidLoad];
 
     self.view.backgroundColor =KHEXColor(@"f9e3a8");
+    JDLLog(@"哈哈哈哈哈哈哈哈");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
