@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "JDLCommon.h"
+
 @interface ViewController ()
 
 @end
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.view.backgroundColor =KHEXColor(@"f9e3a8");
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -15,6 +15,7 @@
 		82758ADE1F9F1E9800A2DFED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82758ADD1F9F1E9800A2DFED /* main.m */; };
 		82758AE81F9F1E9900A2DFED /* JDLKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82758AE71F9F1E9900A2DFED /* JDLKitTests.m */; };
 		82758AF31F9F1E9900A2DFED /* JDLKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82758AF21F9F1E9900A2DFED /* JDLKitUITests.m */; };
+		F73B785B91E061C6AC97BA28 /* libPods-JDLKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB03A1B21875BFE6CF30CAA8 /* libPods-JDLKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41AD912461A384F5B6FB9AE6 /* Pods-JDLKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLKit/Pods-JDLKit.release.xcconfig"; sourceTree = "<group>"; };
 		82758ACB1F9F1E9800A2DFED /* JDLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82758ACE1F9F1E9800A2DFED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82758ACF1F9F1E9800A2DFED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		82758AEE1F9F1E9900A2DFED /* JDLKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDLKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82758AF21F9F1E9900A2DFED /* JDLKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLKitUITests.m; sourceTree = "<group>"; };
 		82758AF41F9F1E9900A2DFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82758B051F9F2BBB00A2DFED /* JDLCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCommon.h; sourceTree = "<group>"; };
+		82758B061F9F2CFC00A2DFED /* JDLScreenBoundsFontColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLScreenBoundsFontColor.h; sourceTree = "<group>"; };
+		88AC2ED23CAA6DEC981FF29B /* Pods-JDLKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDLKit/Pods-JDLKit.debug.xcconfig"; sourceTree = "<group>"; };
+		AB03A1B21875BFE6CF30CAA8 /* libPods-JDLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDLKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73B785B91E061C6AC97BA28 /* libPods-JDLKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5275768FCFBDACB4F4E0FB61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88AC2ED23CAA6DEC981FF29B /* Pods-JDLKit.debug.xcconfig */,
+				41AD912461A384F5B6FB9AE6 /* Pods-JDLKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		82758AC21F9F1E9800A2DFED = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				82758AE61F9F1E9900A2DFED /* JDLKitTests */,
 				82758AF11F9F1E9900A2DFED /* JDLKitUITests */,
 				82758ACC1F9F1E9800A2DFED /* Products */,
+				5275768FCFBDACB4F4E0FB61 /* Pods */,
+				9D0DA5C0869C35F99000D40F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +119,11 @@
 		82758ACD1F9F1E9800A2DFED /* JDLKit */ = {
 			isa = PBXGroup;
 			children = (
-				82758ACE1F9F1E9800A2DFED /* AppDelegate.h */,
-				82758ACF1F9F1E9800A2DFED /* AppDelegate.m */,
-				82758AD11F9F1E9800A2DFED /* ViewController.h */,
-				82758AD21F9F1E9800A2DFED /* ViewController.m */,
-				82758AD41F9F1E9800A2DFED /* Main.storyboard */,
+				82758B011F9F299200A2DFED /* AppDelegate */,
+				82758B021F9F29C600A2DFED /* Controllers */,
+				82758B001F9F296700A2DFED /* Views */,
+				82758B041F9F2B8300A2DFED /* Common */,
 				82758AD71F9F1E9800A2DFED /* Assets.xcassets */,
-				82758AD91F9F1E9800A2DFED /* LaunchScreen.storyboard */,
 				82758ADC1F9F1E9800A2DFED /* Info.plist */,
 				82758ADD1F9F1E9800A2DFED /* main.m */,
 			);
@@ -132,6 +148,50 @@
 			path = JDLKitUITests;
 			sourceTree = "<group>";
 		};
+		82758B001F9F296700A2DFED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82758AD41F9F1E9800A2DFED /* Main.storyboard */,
+				82758AD91F9F1E9800A2DFED /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82758B011F9F299200A2DFED /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				82758ACE1F9F1E9800A2DFED /* AppDelegate.h */,
+				82758ACF1F9F1E9800A2DFED /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		82758B021F9F29C600A2DFED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82758AD11F9F1E9800A2DFED /* ViewController.h */,
+				82758AD21F9F1E9800A2DFED /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		82758B041F9F2B8300A2DFED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				82758B051F9F2BBB00A2DFED /* JDLCommon.h */,
+				82758B061F9F2CFC00A2DFED /* JDLScreenBoundsFontColor.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D0DA5C0869C35F99000D40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB03A1B21875BFE6CF30CAA8 /* libPods-JDLKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82758AF71F9F1E9900A2DFED /* Build configuration list for PBXNativeTarget "JDLKit" */;
 			buildPhases = (
+				94582DBC11348329B7285132 /* [CP] Check Pods Manifest.lock */,
 				82758AC71F9F1E9800A2DFED /* Sources */,
 				82758AC81F9F1E9800A2DFED /* Frameworks */,
 				82758AC91F9F1E9800A2DFED /* Resources */,
+				1B0B82F4728AA6B844EEF97F /* [CP] Embed Pods Frameworks */,
+				3B79FD43506D5779E0DFAAC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +257,7 @@
 		82758AC31F9F1E9800A2DFED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDL;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "BlueSkyer-25";
 				TargetAttributes = {
@@ -259,6 +323,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B0B82F4728AA6B844EEF97F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDLKit/Pods-JDLKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B79FD43506D5779E0DFAAC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDLKit/Pods-JDLKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94582DBC11348329B7285132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82758AC71F9F1E9800A2DFED /* Sources */ = {
@@ -428,6 +540,7 @@
 		};
 		82758AF81F9F1E9900A2DFED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88AC2ED23CAA6DEC981FF29B /* Pods-JDLKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +555,7 @@
 		};
 		82758AF91F9F1E9900A2DFED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41AD912461A384F5B6FB9AE6 /* Pods-JDLKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
